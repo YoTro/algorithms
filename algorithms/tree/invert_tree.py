@@ -2,8 +2,7 @@
 
 def reverse(root):
     if not root:
-        return
-    root.left, root.right = root.right, root.left
+        return root.left, root.right = root.right, root.left
     if root.left:
         reverse(root.left)
     if root.right:
