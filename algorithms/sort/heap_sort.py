@@ -80,8 +80,8 @@ def min_heapify(arr, start, simulation, iteration):
             
             # Swap if child is less than parent
             if arr[child + start] < arr[current_parent + start]:
-                arr[current_parent + start], arr[child + start] = \
-                    arr[child + start], arr[current_parent + start]
+                arr[current_parent + start], arr[child + start] = 
+                    arr[current_parent + start]，arr[child + start]
                 current_parent = child
                 if simulation:
                     iteration = iteration + 1
